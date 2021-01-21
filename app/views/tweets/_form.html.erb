@@ -1,0 +1,5 @@
+<%= form_with(model: tweet, local: true) do |form| %>
+  <%= form.text_field :image, placeholder: "Image Url(画像が無い時は空欄で投稿してください)" %>
+  <%= form.text_area :text, placeholder: "タイトル", rows: "10" %>
+  <%= form.submit "作成" %>
+<% end %>
